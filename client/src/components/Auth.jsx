@@ -28,7 +28,7 @@ const Auth = () => {
 
     const { username, password, phoneNumber, avatarURL } = form;
 
-    const URL = 'https://localhost:5000/auth';
+    const URL = 'http://localhost:5000/auth';
     // const URL = 'https://medical-pager.herokuapp.com/auth';
 
     const {
@@ -141,7 +141,7 @@ const Auth = () => {
             <p>
               {isSignup ? 'Already have an account?' : "Don't have an account?"}
               <span onClick={switchMode}>
-                {isSignup ? 'Sign In' : 'Sign Up'}
+                {isSignup ? ' Sign In' : ' Sign Up'}
               </span>
             </p>
           </div>
